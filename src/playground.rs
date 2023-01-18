@@ -1,9 +1,10 @@
 //This program was written by Yazeed M. Hakami, for BE1610.
 
-//Please note that if you are unable to compile this code, please see the other Rust file in this folder.
+// Please visit this website https://play.rust-lang.org/ and paste this code there!
+
+
 
 use std::f64;
-use std::io;
 const EULER: f64 = std::f64::consts::E; // Euler's number, "e"
 
 fn main() {
@@ -11,20 +12,11 @@ fn main() {
     let capacitence: f64 = 0.001; // Maximum capacitence on the capacitor. It's denoted on the side, by the "1000uF".
     let resistence: f64 = 100000.0; // Luv me resistors, simple as. (this is in Ohms.)
 
-    println!("Please input your desired voltage in decimal form.");
-    println!("WARNING! --- If you wish to recieve the same results as the paper, please input the following values:");
-    println!("5, 50.");
 
+    let voltage: f64 = 5.0;// Voltage applied by power source during lab. (it was 5 during the practical test)
+    let step: f64 = 50.0;
 
-    let mut voltage = String::new();
-    io::stdin().read_line(&mut voltage).unwrap();
-    let voltage: f64 = voltage.trim().parse().unwrap(); // Voltage applied by power source during lab. (it was 5 during the practical test)
-
-    println!("Please input your desired time increment in integer form."); // 
     println!("Output will be given in Amperes.");
-    let mut step = String::new();
-    io::stdin().read_line(&mut step).unwrap();
-    let step: f64 = step.trim().parse().unwrap();
 
     for i in (0..=(step*(10 as f64)) as i64).step_by(step as usize) {
         let ic: f64 = (voltage)/resistence * EULER.powf(-i as f64/(resistence*capacitence));
