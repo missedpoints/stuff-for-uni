@@ -1,8 +1,10 @@
-// Hello! Sorry to hear that I caused trouble. Please see the next line down.
+// Hello! Sorry to hear that I caused trouble. Please see the next line down. - Yazeed Hakami
 
 // Please visit this website https://play.rust-lang.org/ and paste this code there!
 
-
+// This is a more simplified version of the other program, designed with the exact parameters I used for the exam. 
+// The other file, main.rs is variable and can be used to solve for those equations using pretty much any parameters.
+// Thank you for giving me the time of day!
 
 use std::f64;
 const EULER: f64 = std::f64::consts::E; // Euler's number, "e"
