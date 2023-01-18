@@ -1,4 +1,4 @@
-//This program was written by Yazeed M. Hakami, for BE1610.
+// Hello! Sorry to hear that I caused trouble. Please see the next line down.
 
 // Please visit this website https://play.rust-lang.org/ and paste this code there!
 
