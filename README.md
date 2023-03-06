@@ -1,3 +1,4 @@
-# stuff-for-uni
+# uni-project-1
 
-Code written for and by Yazeed Hakami, to aid with whatever university-related engineering or scientific endeavors I may be on.
+Code written for and by Yazeed Hakami, this repository is specifically for the first statics project I did, and may be deleted soon.
+
